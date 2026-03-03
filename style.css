@@ -11,4 +11,44 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #dddddd;
+}
+
+.card {
+    height: 22rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    flex-direction: column;
+}
+
+.card, .perfil, .fab, .contato {
+    box-shadow: -0.1rem -0.1rem 0.3rem #f8f7f7, 0.1rem 0.1rem 0.3rem;
+}
+
+.perfil {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin: 1rem 0;
+}
+
+.redes-sociais-icones {
+    margin: 1rem;
+}
+
+.fab {
+   height: 2rem;
+   width: 2rem;
+   /* descobrir o porque do width nao aumentar de tamanho */
 }
