@@ -1,6 +1,15 @@
 :root {
     --cor-fundo: #dddcdc;
-    --cor-texto: #41364b
+    --cor-texto: #41364b;
+    --boxshadow1: #f8f7f7;
+    --boxshadow2: #2b2a2a;
+}
+
+.dark-mode{
+    --cor-fundo: #1e1a22;
+    --cor-texto: #e8e4ec;
+    --boxshadow1: #2e2836;
+    --boxshadow2: #0e0c12;
 }
 
 * {
@@ -30,7 +39,7 @@ body{
 }
 
 .card, .perfil, .contato, .fab{
-    box-shadow: -0.1rem -0.1rem 0.3rem #f8f7f7, 0.1rem 0.1rem 0.3rem;
+    box-shadow: -0.1rem -0.1rem 0.3rem var(--boxshadow1), 0.1rem 0.1rem 0.3rem var(--boxshadow2);
 }
 
 .perfil {
