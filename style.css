@@ -5,7 +5,7 @@
     --boxshadow2: #2b2a2a;
 }
 
-.dark-mode{
+.tema-escuro{
     --cor-fundo: #1e1a22;
     --cor-texto: #e8e4ec;
     --boxshadow1: #2e2836;
@@ -36,9 +36,10 @@ body{
     align-items: center;
     flex-direction: column;
     border-radius: 0.8rem;
+    position: relative;
 }
 
-.card, .perfil, .contato, .fab{
+.card, .contato, .fab, .perfil, #trocar-tema{
     box-shadow: -0.1rem -0.1rem 0.3rem var(--boxshadow1), 0.1rem 0.1rem 0.3rem var(--boxshadow2);
 }
 
@@ -85,7 +86,7 @@ body{
     border-radius: 50%;
 }
 
-.contato {
+.contato, #trocar-tema {
     background: none;
     margin-top: 0.5rem;
     border: none;
@@ -93,7 +94,36 @@ body{
     border-radius: 0.5rem;
 }
 
-.fab:hover, .contato:hover{
+.fab:hover, .contato:hover, #trocar-tema:hover{
     box-shadow: inset -0.1rem -0.1rem 0.3rem #ffff, inset 0.1rem 0.1rem 0.3rem #868686;
     cursor: pointer;
+}
+
+#trocar-tema {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    background-color: var(--cor-fundo);
+    position: absolute;
+}
+
+#trocar-tema i {
+    fill: var(--cor-fundo);
+}
+
+#trocar-tema i:last-child {
+    display: none;
+}
+
+.tema-escuro #trocar-tema i:first-child{
+    display: none;
+}
+
+.tema-escuro #trocar-tema i:last-child{
+    display: inline;
 }
